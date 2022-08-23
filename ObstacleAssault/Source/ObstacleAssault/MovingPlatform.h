@@ -25,4 +25,7 @@ public:
 
 	UPROPERTY(EditAnywhere)
 	FVector testVector = FVector(10.0f, 20.0f, 30.0f);
+
+	UPROPERTY(EditAnywhere)
+	float moveSpeed = 5.0f;
 };

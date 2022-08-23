@@ -15,8 +15,6 @@ AMovingPlatform::AMovingPlatform()
 void AMovingPlatform::BeginPlay()
 {
 	Super::BeginPlay();
-
-	SetActorLocation(testVector);
 }
 
 // Called every frame
@@ -24,5 +22,8 @@ void AMovingPlatform::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	testVector.Y += moveSpeed * DeltaTime;
+
+	SetActorLocation(testVector);
 }
 
