@@ -750,3 +750,12 @@ LogConfig: CVar [[QualityLevelMapping:high]] deferred - dummy variable created
 [2022.08.23-19.30.01:383][565]LogSavePackage: Moving '../../../../../Programming/Unreal/ObstacleAssault/ObstacleAssault/Saved/Main131107FA4B42A210D13454A9E2CFD298.tmp' to '../../../../../Programming/Unreal/ObstacleAssault/ObstacleAssault/Content/Main.umap'
 [2022.08.23-19.30.01:451][565]AssetCheck: New page: Asset Save: Main
 [2022.08.23-19.30.01:451][565]LogContentValidation: Display: Validating World /Game/Main.Main
+[2022.08.23-19.49.23:664][318]LogLiveCoding: Display: Starting Live Coding compile.
+[2022.08.23-19.50.05:359][962]LogLiveCoding: Display:    Creating library D:\Programming\Unreal\ObstacleAssault\ObstacleAssault\Binaries\Win64\UnrealEditor-ObstacleAssault.patch_1.lib and object D:\Programming\Unreal\ObstacleAssault\ObstacleAssault\Binaries\Win64\UnrealEditor-ObstacleAssault.patch_1.exp
+[2022.08.23-19.50.05:419][962]LogClass: /Script/ObstacleAssault Reload.
+[2022.08.23-19.50.05:419][962]LogClass: MovingPlatform Reload.
+[2022.08.23-19.50.05:420][962]LogClass: Could not find existing class MovingPlatform in package /Script/ObstacleAssault for reload, assuming new or modified class
+[2022.08.23-19.50.05:431][962]Re-instancing MovingPlatform after reload.
+[2022.08.23-19.50.05:507][962]LogUObjectHash: Compacting FUObjectHashTables data took   0.68ms
+[2022.08.23-19.50.05:807][963]Display: Reload/Re-instancing Complete: 1 package changed, 1 class changed
+[2022.08.23-19.50.05:807][963]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
