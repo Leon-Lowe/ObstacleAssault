@@ -15,7 +15,9 @@ AMovingPlatform::AMovingPlatform()
 void AMovingPlatform::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
+	aPlusB = inputA + inputB;
+	floatAPlusFloatB = inputFloatA + inputFloatB;
 }
 
 // Called every frame
