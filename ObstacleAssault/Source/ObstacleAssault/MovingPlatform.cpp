@@ -16,8 +16,7 @@ void AMovingPlatform::BeginPlay()
 {
 	Super::BeginPlay();
 
-	aPlusB = inputA + inputB;
-	floatAPlusFloatB = inputFloatA + inputFloatB;
+	SetActorLocation(testVector);
 }
 
 // Called every frame
