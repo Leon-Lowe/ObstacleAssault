@@ -23,6 +23,10 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+private:
+	void MovePlatform(float deltaTime);
+	void RotatePlatform(float deltaTime);
+
 	UPROPERTY(EditAnywhere, Category="Movement")
 	FVector moveDirection = FVector(1, 0, 0);
 

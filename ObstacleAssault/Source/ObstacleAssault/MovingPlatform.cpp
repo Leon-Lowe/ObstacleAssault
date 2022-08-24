@@ -25,8 +25,13 @@ void AMovingPlatform::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	MovePlatform(DeltaTime);
+}
+
+void AMovingPlatform::MovePlatform(float deltaTime)
+{
 	FVector currentPosition = GetActorLocation();
-	currentPosition += moveDirection * (moveSpeed * DeltaTime);
+	currentPosition += moveDirection * (moveSpeed * deltaTime);
 	SetActorLocation(currentPosition);
 
 	distanceTravelled = FVector::Distance(startPosition, currentPosition);
@@ -36,15 +41,9 @@ void AMovingPlatform::Tick(float DeltaTime)
 		SetActorLocation(startPosition);
 		moveDirection = -moveDirection;
 	}
-
-	/*	
-	Move platform forward
-		* Get current position
-		* Add a vector to this position
-		* Set position
-	Reverse direction
-		* Check if gone too far
-		* Multiply the direction vector by -1
-	*/
 }
 
+void AMovingPlatform::RotatePlatform(float deltaTime)
+{
+	//Rotate platform
+}
