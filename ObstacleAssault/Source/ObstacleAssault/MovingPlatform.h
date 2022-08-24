@@ -27,17 +27,18 @@ private:
 	void MovePlatform(float deltaTime);
 	void RotatePlatform(float deltaTime);
 
-	UPROPERTY(EditAnywhere, Category="Movement")
-	FVector moveDirection = FVector(1, 0, 0);
+	float GetDistanceTravelled() const;
 
-	UPROPERTY(EditAnywhere, Category="Movement")
-	float moveSpeed = 5.0f;
-
-	UPROPERTY(EditAnywhere, Category="Movement")
-	float maxMoveDistance = 100.0f;
-
-	UPROPERTY(VisibleAnywhere, Category="Movement")
-	float distanceTravelled;
+	//Movement variables
+	UPROPERTY(EditAnywhere, Category="Movement") bool canMove = true;
+	UPROPERTY(EditAnywhere, Category="Movement") FVector moveDirection = FVector(1, 0, 0);
+	UPROPERTY(EditAnywhere, Category="Movement") float moveSpeed = 5.0f;
+	UPROPERTY(EditAnywhere, Category="Movement") float maxMoveDistance = 100.0f;
 
 	FVector startPosition;
+
+	//Rotation variables
+	UPROPERTY(EditAnywhere, Category="Rotation") bool canRotate = true;
+	UPROPERTY(EditAnywhere, Category="Rotation") FRotator rotationDirection = FRotator(1, 0, 0);
+	UPROPERTY(EditAnywhere, Category="Rotation") float rotateSpeed = 5.0f;
 };
